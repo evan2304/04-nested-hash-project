@@ -1093,3 +1093,15 @@ sat_data = JSON.parse(%q|
  ]
 }
 |)
+
+#puts sat_data["data"][0][9]
+
+def sat_data (school)
+    sat_data["data"].each do |element|
+        if school == element[9]
+            puts school
+        end 
+    end
+end 
+
+sat_data("PHOENIX ACADEMY")
