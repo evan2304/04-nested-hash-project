@@ -1094,14 +1094,28 @@ sat_data = JSON.parse(%q|
 }
 |)
 
-#puts sat_data["data"][0][9]
+# puts sat_data["data"][0][9] 
 
-def sat_data (school)
-    sat_data["data"].each do |element|
-        if school == element[9]
-            puts school
-        end 
-    end
+def find_school(data, school)
+  data["data"].each do |element|
+      if school == element[9]
+          puts school
+      end 
+  end
 end 
 
-sat_data("PHOENIX ACADEMY")
+def get_data(data)
+  find_school(data, 'PHOENIX ACADEMY')
+end
+
+def get_sat_score()
+  puts "What is your SAT score? (Total, English, Math)"
+  score = gets.chomp
+  score.split(',').map(&:to_i)
+end
+
+def compare_scores(scores)
+end
+
+# get_data(sat_data)
+puts get_sat_score()
