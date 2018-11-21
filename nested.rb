@@ -1133,19 +1133,19 @@ end
 def compare_scores(scores, school_scores)
   statement = ''
   if scores[0].to_i > school_scores[0].to_i
-    statement << 'The average score in your school is ' + school_scores[0].to_s + '. Your total score is above average.'
+    statement << ' The average score in your school is ' + school_scores[0].to_s + '. Your total score is above average.'
   else
-    statement << 'The average score in your school is ' + school_scores[0].to_s + '. Your total score is below average.'
+    statement << ' The average score in your school is ' + school_scores[0].to_s + '. Your total score is below average.'
   end
   if scores[1].to_i > school_scores[1].to_i
-    statement << 'The average english score in your school is ' + school_scores[1].to_s + '. Your english score is above average.'
+    statement << ' The average english score in your school is ' + school_scores[1].to_s + '. Your english score is above average.'
   else
-    statement << 'The average english score in your school is ' + school_scores[1].to_s + '. Your english score is below average.'
+    statement << ' The average english score in your school is ' + school_scores[1].to_s + '. Your english score is below average.'
   end
   if scores[2].to_i > school_scores[2].to_i
-    statement << 'The average math score in your school is ' + school_scores[2].to_s + '. Your math score is above average.'
+    statement << ' The average math score in your school is ' + school_scores[2].to_s + '. Your math score is above average.'
   else
-    statement << 'The average math score in your school is ' + school_scores[2].to_s + '. Your math score is below average.'
+    statement << ' The average math score in your school is ' + school_scores[2].to_s + '. Your math score is below average.'
   end
   statement
 end
